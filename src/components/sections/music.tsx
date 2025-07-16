@@ -3,8 +3,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Play, Pause, ExternalLink, Download } from "lucide-react"
+import { Play, Pause, ExternalLink } from "lucide-react"
 import { useState } from "react"
+import Image from 'next/image'
 
 // Mock music data - replace with actual tracks
 const musicData = [
@@ -98,7 +99,7 @@ export function Music() {
             Music
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Music flows through my veins as much as ink flows through my needles. 
+            Music flows through my veins as much as ink flows through my needles.
             Each song is a soundtrack to the creative process, a melody born from artistic inspiration.
           </p>
         </div>
@@ -112,7 +113,7 @@ export function Music() {
                 <CardContent className="p-0">
                   <div className="flex flex-col sm:flex-row">
                     <div className="relative w-full sm:w-48 h-48 sm:h-auto">
-                      <img
+                      <Image
                         src={album.cover}
                         alt={`${album.title} album cover`}
                         className="w-full h-full object-cover"
@@ -180,7 +181,7 @@ export function Music() {
                   <p className="text-sm text-muted-foreground mb-4">
                     {track.description}
                   </p>
-                  
+
                   {/* Mock audio player */}
                   <div className="bg-muted/50 rounded-lg p-3 mb-4">
                     <div className="flex items-center justify-between text-sm text-muted-foreground mb-2">
@@ -188,7 +189,7 @@ export function Music() {
                       <span>{track.duration}</span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
-                      <div 
+                      <div
                         className="bg-primary h-2 rounded-full transition-all duration-300"
                         style={{ width: currentlyPlaying === track.id ? "30%" : "0%" }}
                       />

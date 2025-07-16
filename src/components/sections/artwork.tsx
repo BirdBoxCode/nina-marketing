@@ -81,9 +81,9 @@ const categories = [
 
 export function Artwork() {
   const [selectedCategory, setSelectedCategory] = useState("all")
-  
-  const filteredArtwork = selectedCategory === "all" 
-    ? artworkData 
+
+  const filteredArtwork = selectedCategory === "all"
+    ? artworkData
     : artworkData.filter(artwork => artwork.category === selectedCategory)
 
   return (
@@ -94,11 +94,11 @@ export function Artwork() {
             Artwork Portfolio
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Beyond skin and ink, I explore various mediums to express creativity and emotion. 
+            Beyond skin and ink, I explore various mediums to express creativity and emotion.
             Each piece represents a journey of artistic discovery and personal expression.
           </p>
           <blockquote className="text-base text-muted-foreground italic max-w-xl mx-auto">
-            "Art is not what you see, but what you make others see." - Edgar Degas
+            Art is not what you see, but what you make others see. - Edgar Degas
           </blockquote>
         </div>
 
@@ -145,7 +145,7 @@ export function Artwork() {
                       </CardContent>
                     </Card>
                   </DialogTrigger>
-                  
+
                   <DialogContent className="max-w-3xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
@@ -166,7 +166,7 @@ export function Artwork() {
                           </div>
                           <p className="text-muted-foreground">{artwork.description}</p>
                         </div>
-                        
+
                         <div className="space-y-2">
                           <h4 className="font-medium text-foreground">Details</h4>
                           <div className="text-sm text-muted-foreground space-y-1">

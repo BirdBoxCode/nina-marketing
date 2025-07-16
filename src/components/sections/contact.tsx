@@ -45,8 +45,8 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to bring your vision to life? Let's discuss your next tattoo, commission, 
-            or collaboration. I'm always excited to work on new creative projects.
+            Ready to bring your vision to life? Lets discuss your next tattoo, commission,
+            or collaboration. Im always excited to work on new creative projects.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export function Contact() {
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible.
+                Fill out the form below and Ill get back to you as soon as possible.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -85,7 +85,7 @@ export function Contact() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
                   <Input
@@ -97,7 +97,7 @@ export function Contact() {
                     required
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
                   <Textarea
@@ -110,7 +110,7 @@ export function Contact() {
                     required
                   />
                 </div>
-                
+
                 <Button type="submit" className="w-full">
                   Send Message
                 </Button>
@@ -135,7 +135,7 @@ export function Contact() {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-muted-foreground" />
                   <div>
@@ -143,7 +143,7 @@ export function Contact() {
                     <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-muted-foreground" />
                   <div>
@@ -151,7 +151,7 @@ export function Contact() {
                     <p className="text-sm text-muted-foreground">hello@nina-art.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-muted-foreground" />
                   <div>
@@ -175,22 +175,22 @@ export function Contact() {
               </CardHeader>
               <CardContent>
                 <div className="flex space-x-4">
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="flex items-center justify-center w-12 h-12 rounded-full bg-muted hover:bg-muted/80 transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="h-5 w-5" />
                   </a>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="flex items-center justify-center w-12 h-12 rounded-full bg-muted hover:bg-muted/80 transition-colors"
                     aria-label="Twitter"
                   >
                     <Twitter className="h-5 w-5" />
                   </a>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="flex items-center justify-center w-12 h-12 rounded-full bg-muted hover:bg-muted/80 transition-colors"
                     aria-label="Facebook"
                   >
